@@ -63,6 +63,7 @@
                         <include>test/**/*.scss</include>
                         <include>tools/**/*.js</include>
                         <include>utils/**/*.js</include>
+                        <include>*.html</include>
                         <include>*.js</include>
                         <include>*.xml</include>
                         <include>resources/scss/**/*.scss</include>
