@@ -1,8 +1,10 @@
-
 .idea
-
+.classpath
 node_modules
 .npmrc
 test/coverage
 npm-debug.log
 .vscode
+target
+node
+dist

@@ -16,7 +16,7 @@
 import React, {Component} from 'react';
 
 import CollapsibleSlidingPanel from '../collapsibleSlidingPanel/CollapsibleSlidingPanel.jsx';
-import './resources/_collapsibleSlidingPanel.scss';
+import '../resources/_collapsibleSlidingPanel.scss';
 
 export default class CollapsibleSlidingPanelTest extends Component {
   constructor(props) {

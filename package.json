@@ -1,21 +1,29 @@
 {
   "name": "collapsible-sliding-panel",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Collapsible panel used to show/hide contained elements",
   "main": "dist/bundle.js",
   "author": "",
-  "license": "UNLICENSED",
+  "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "http://d2qagit.corp.amdocs.com/ST_MICRO/collapsible-sliding-panel.git"
+    "url": "https://github.com/StormUIComponents/collapsible-sliding-panel.git"
   },
-  "publishConfig": {
-    "registry": "http://10.247.57.144:8081/repository/npm-aee/"
-  },
+  "files": [
+    "dist/",
+    "collapsibleSlidingPanel/",
+    "utils/",
+    "resources/",
+    "index.js",
+    "package.json",
+    "README.md",
+    "LICENSE"
+  ],
   "dependencies": {
-    "react": "^15.6.1",
-    "react-dom": "^15.6.1",
-    "react-select": "^1.0.0-rc.10",
+    "prop-types": "^15.6.2",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "react-select": "^1.2.1",
     "url-loader": "^0.5.9"
   },
   "devDependencies": {
@@ -24,12 +32,12 @@
     "babel-loader": "^6.4.1",
     "babel-plugin-lodash": "^3.1.4",
     "babel-polyfill": "^6.5.0",
-    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-es2015": "^6.9.0",
     "babel-preset-react": "^6.5.0",
     "babel-preset-stage-0": "^6.5.0",
-    "copy-webpack-plugin": "^3.0.1",
+    "copy-webpack-plugin": "^4.0.1",
     "css-loader": "^0.25.0",
-    "eslint": "^2.10.2",
+    "eslint": "^3.1.1",
     "eslint-loader": "^1.3.0",
     "eslint-plugin-import": "^1.8.0",
     "eslint-plugin-react": "^5.1.1",
@@ -37,7 +45,6 @@
     "immutable": "^3.8.1",
     "node-sass": "^3.10.1",
     "react-addons-test-utils": "^15.3.2",
-    "react-dom": "^15.1.0",
     "react-hot-loader": "^1.3.1",
     "sass-loader": "^4.0.2",
     "style-loader": "^0.13.1",

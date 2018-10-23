@@ -13,11 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import CollapsibleSlidingPanelTest from 'test/CollapsibleSlidingPanelTest.jsx';
-import CollapsibleSlidingPanel from 'collapsibleSlidingPanel/CollapsibleSlidingPanel.jsx';
-import 'test/resources/_collapsibleSlidingPanel.scss';
+import CollapsibleSlidingPanel from './collapsibleSlidingPanel/CollapsibleSlidingPanel.jsx';
+import './resources/_collapsibleSlidingPanel.scss';
 
 export {
-  CollapsibleSlidingPanel,
-  CollapsibleSlidingPanelTest
+  CollapsibleSlidingPanel
 };
