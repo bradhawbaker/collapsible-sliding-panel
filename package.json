@@ -1,6 +1,6 @@
 {
   "name": "collapsible-sliding-panel",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Collapsible panel used to show/hide contained elements",
   "main": "dist/bundle.js",
   "author": "",
@@ -21,8 +21,8 @@
   ],
   "dependencies": {
     "prop-types": "^15.6.2",
-    "react": "^16.5.2",
-    "react-dom": "^16.5.2",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.2",
     "react-select": "^1.2.1",
     "url-loader": "^0.5.9"
   },
