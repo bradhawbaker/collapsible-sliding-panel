@@ -1,6 +1,7 @@
 import React from 'react';
-
-import i18n from '../utils/i18n/i18n.js';
+import { PropTypes } from 'prop-types';
+import '../resources/_collapsibleSlidingPanel.scss';
+import i18n from '../utils/i18n/i18n';
 
 const COLLAPSE = 'Collapse';
 const EXPAND = 'Expand';
@@ -14,7 +15,16 @@ class CollapsibleSlidingPanel extends React.Component {
     };
     this.onExpandToggle = this.onExpandToggle.bind(this);
   }
-
+  static get propTypes() {
+    return {
+      collapseCallback: PropTypes.func,
+      slidingPanelContent: PropTypes.any,
+      children: PropTypes.any,
+      slidingPanelClassName: PropTypes.any,
+      slidingPanelClosedClassName: PropTypes.any,
+      expanderHandleClassName: PropTypes.any
+    };
+  }
   onExpandToggle(onCollapseCallback){
     let collapsiblePanelOpen = this.state.collapsiblePanelOpen;
 
@@ -54,8 +64,10 @@ class CollapsibleSlidingPanel extends React.Component {
   }
 
   render() {
-    let slidingPanelClass = this.getPanelClassName(this.props.slidingPanelClassName, this.props.slidingPanelClosedClassName);
-    let expanderClassName = this.getExpanderClassName(this.props.expanderHandleClassName, this.props.slidingPanelClosedClassName);
+    let slidingPanelClass =
+      this.getPanelClassName(this.props.slidingPanelClassName, this.props.slidingPanelClosedClassName);
+    let expanderClassName =
+      this.getExpanderClassName(this.props.expanderHandleClassName, this.props.slidingPanelClosedClassName);
 
     return (
       <div className='collapsible-sliding-panel-main-content'>

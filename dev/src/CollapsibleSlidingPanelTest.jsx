@@ -15,8 +15,12 @@
  */
 import React, {Component} from 'react';
 
-import CollapsibleSlidingPanel from '../collapsibleSlidingPanel/CollapsibleSlidingPanel.jsx';
-import '../resources/_collapsibleSlidingPanel.scss';
+
+import CollapsibleSlidingPanel from '../../collapsibleSlidingPanel/CollapsibleSlidingPanel.jsx';
+
+
+
+
 
 export default class CollapsibleSlidingPanelTest extends Component {
   constructor(props) {
@@ -26,8 +30,19 @@ export default class CollapsibleSlidingPanelTest extends Component {
       leftPanelExpanded: false
     };
 
-    this.onCollapse = this.onCollapse.bind(this);
   }
+
+
+
+
+onFilter(filterValues) {
+  this.setState({filterValues: filterValues});
+}
+
+
+
+
+
 
   onCollapse(isOpen) {
     let leftPanelExpanded = isOpen;
@@ -61,6 +76,7 @@ export default class CollapsibleSlidingPanelTest extends Component {
           collapseCallback={this.onCollapse}>
           <div className='content-container'>
             <p>this is the main area content</p>
+
             <p>this is the main area content</p>
             <p>this is the main area content</p>
             <p>this is the main area content</p>
