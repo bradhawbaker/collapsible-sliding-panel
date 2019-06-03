@@ -2,7 +2,7 @@
   "name": "collapsible-sliding-panel",
   "version": "2.0.1",
   "description": "Collapsible panel used to show/hide contained elements",
-  "main": "dist/collapsibleSlidingPanelBundle.js",
+  "main": "dist/collapsible-sliding-panel.bundle.js",
   "author": "",
   "keywords": [],
   "license": "Apache-2.0",
