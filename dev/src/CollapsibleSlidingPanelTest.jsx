@@ -13,10 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import React, {Component} from 'react';
+import React, { Component } from "react";
 
-import CollapsibleSlidingPanel from '../collapsibleSlidingPanel/CollapsibleSlidingPanel.jsx';
-import '../resources/_collapsibleSlidingPanel.scss';
+import CollapsibleSlidingPanel from "../../collapsibleSlidingPanel/CollapsibleSlidingPanel.jsx";
 
 export default class CollapsibleSlidingPanelTest extends Component {
   constructor(props) {
@@ -25,18 +24,20 @@ export default class CollapsibleSlidingPanelTest extends Component {
     this.state = {
       leftPanelExpanded: false
     };
+  }
 
-    this.onCollapse = this.onCollapse.bind(this);
+  onFilter(filterValues) {
+    this.setState({ filterValues: filterValues });
   }
 
   onCollapse(isOpen) {
     let leftPanelExpanded = isOpen;
-    this.setState({leftPanelExpanded});
+    this.setState({ leftPanelExpanded });
   }
 
   getMenuContent() {
     return (
-      <div className='menu-content'>
+      <div className="menu-content">
         <p>this is in the collapsible panel content</p>
         <p>this is in the collapsible panel content</p>
         <p>this is in the collapsible panel content</p>
@@ -48,19 +49,24 @@ export default class CollapsibleSlidingPanelTest extends Component {
   render() {
     let menuContent = this.getMenuContent();
     return (
-      <div className='collapsible-sliding-panel-container'>
-        <div className='collapsible-sliding-panel-header'>
+      <div className="collapsible-sliding-panel-container">
+        <div className="collapsible-sliding-panel-header">
           <h1>Collapsible Sliding Panel</h1>
-          <p>The sliding panel is {this.state.leftPanelExpanded ? 'open' : 'closed'}</p>
+          <p>
+            The sliding panel is{" "}
+            {this.state.leftPanelExpanded ? "open" : "closed"}
+          </p>
         </div>
         <CollapsibleSlidingPanel
-          slidingPanelClassName='collapsible-sliding-panel'
-          slidingPanelClosedClassName='collapsible-sliding-panel-is-closed'
-          expanderHandleClassName='collapsible-sliding-panel-expander'
+          slidingPanelClassName="collapsible-sliding-panel"
+          slidingPanelClosedClassName="collapsible-sliding-panel-is-closed"
+          expanderHandleClassName="collapsible-sliding-panel-expander"
           slidingPanelContent={menuContent}
-          collapseCallback={this.onCollapse}>
-          <div className='content-container'>
+          collapseCallback={this.onCollapse}
+        >
+          <div className="content-container">
             <p>this is the main area content</p>
+
             <p>this is the main area content</p>
             <p>this is the main area content</p>
             <p>this is the main area content</p>
