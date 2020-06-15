@@ -1,6 +1,7 @@
 # Collapsible Sliding Panel
 
 ## Overview
+
 The Collapsible Sliding Panel component used to show/hide contained elements.
 
 [CHANGELOG.md](CHANGELOG.md) contains Release Notes for this package.
@@ -11,7 +12,7 @@ The Collapsible Sliding Panel component used to show/hide contained elements.
 
 The Collapsible Sliding Panel can be included as follows:
 
-```
+```jsx
 import {CollapsibleSlidingPanel} from 'collapsible-sliding-panel';
 
 ...
@@ -62,10 +63,11 @@ When using the default styles, the 3 style class names mentioned above are combi
 .expanderHandleClassName.slidingPanelClosedClassName - how the expander handle appears when it is closed ... it also uses the CSS 'transition' property to determine how it moves when the sliding panel closes
 
 ## Run & Test Locally
+
 The Collapsible Sliding Panel component can be launched independently in order to see/test it's capabilities as follows:
 
 1. type the following NPM command from a comand prompt that supports NPM: npm run startDev
-2. view the test app at the following URL: http://localhost:8005/collapsible-sliding-panel/
+2. view the test app at the following URL: <http://localhost:8005/collapsible-sliding-panel/>
 
 Once launched, the test application consists of the following components:
 
