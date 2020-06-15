@@ -62,7 +62,7 @@ export default class CollapsibleSlidingPanelTest extends Component {
           slidingPanelClosedClassName="collapsible-sliding-panel-is-closed"
           expanderHandleClassName="collapsible-sliding-panel-expander"
           slidingPanelContent={menuContent}
-          collapseCallback={this.onCollapse}
+          collapseCallback={this.onCollapse.bind(this)}
         >
           <div className="content-container">
             <p>this is the main area content</p>
