@@ -3,6 +3,10 @@
 ## Overview
 The Collapsible Sliding Panel component used to show/hide contained elements.
 
+[CHANGELOG.md](CHANGELOG.md) contains Release Notes for this package.
+
+[CONTRIBUTING.md](CONTRIBUTING.md) contains guidelines on how to help improve this package.
+
 ## Using Collapsible Sliding Panel
 
 The Collapsible Sliding Panel can be included as follows:
@@ -75,4 +79,3 @@ For the test application and using default styles, the Collapsible Sliding Panel
 
 For the test application and using default styles, the Collapsible Sliding Panel looks like ths when expanded:
 ![Image of Collapsible Sliding Panel when panel is expanded](screen_cap_sliding_panel_open.JPG)
-
