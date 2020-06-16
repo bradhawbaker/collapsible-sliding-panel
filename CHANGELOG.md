@@ -1,4 +1,4 @@
-## 2.0.5 (June 15, 2020)
+## 2.1.0 (June 15, 2020)
 
 - bind collapse handler callback to `this`, so method can call `this.setState`
 - add `CHANGELOG.md`
