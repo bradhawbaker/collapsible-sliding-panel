@@ -10,7 +10,7 @@ class CollapsibleSlidingPanel extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      collapsiblePanelOpen: false
+      collapsiblePanelOpen: props.collapsiblePanelOpen || false
     };
     this.onExpandToggle = this.onExpandToggle.bind(this);
   }
@@ -21,7 +21,8 @@ class CollapsibleSlidingPanel extends React.Component {
       children: PropTypes.any,
       slidingPanelClassName: PropTypes.any,
       slidingPanelClosedClassName: PropTypes.any,
-      expanderHandleClassName: PropTypes.any
+      expanderHandleClassName: PropTypes.any,
+      collapsiblePanelOpen: PropTypes.bool,
     };
   }
   onExpandToggle(onCollapseCallback) {
