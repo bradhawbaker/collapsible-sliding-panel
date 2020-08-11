@@ -1,6 +1,6 @@
 {
   "name": "collapsible-sliding-panel",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "description": "Collapsible panel used to show/hide contained elements",
   "main": "dist/collapsible-sliding-panel.bundle.js",
   "author": "",
