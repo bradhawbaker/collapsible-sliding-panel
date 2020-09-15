@@ -34,7 +34,8 @@ render () {
           slidingPanelClassName='collapsible-sliding-panel-classname'
           slidingPanelClosedClassName='collapsible-sliding-panel-is-closed-classname'
           expanderHandleClassName='collapsible-sliding-panel-expander-classname'
-          slidingPanelContent={getSlidingPanelContent()}>
+          slidingPanelContent={getSlidingPanelContent()}
+          collapsiblePanelOpen={true}>
             {getMainPanelContent()}
         </CollapsibleSlidingPanel>
     )
@@ -52,6 +53,7 @@ slidingPanelClosedClassName | The class name used for styling the sliding panel 
 expanderHandleClassName | The class name used for styling the expander handle
 slidingPanelContent | The content that is to be rendered inside the sliding panel
 collapseCallback | The callback function that is called when the sliding panel is expanded or collapsed
+collapsiblePanelOpen | The boolean sets the initial expanded (true) / collapsed (false) state of the sliding panel; defaults to collapsed (false)
 
 Style class names were added as properties for this component so that different styles could be assigned to different instances of the sliding panel within a single application.
 
