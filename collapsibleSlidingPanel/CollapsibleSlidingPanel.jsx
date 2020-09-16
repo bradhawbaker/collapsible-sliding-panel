@@ -1,10 +1,6 @@
 import React from "react";
 import { PropTypes } from "prop-types";
 import "../resources/_collapsibleSlidingPanel.scss";
-import i18n from "../utils/i18n/i18n";
-
-const COLLAPSE = "Collapse";
-const EXPAND = "Expand";
 
 class CollapsibleSlidingPanel extends React.Component {
   constructor(props) {
@@ -23,6 +19,18 @@ class CollapsibleSlidingPanel extends React.Component {
       slidingPanelClosedClassName: PropTypes.any,
       expanderHandleClassName: PropTypes.any,
       collapsiblePanelOpen: PropTypes.bool,
+      tooltipText: PropTypes.shape({
+        expand: PropTypes.string.isRequired,
+        collapse: PropTypes.string.isRequired
+      })
+    };
+  }
+  static get defaultProps() {
+    return {
+      tooltipText: {
+        expand: "Expand",
+        collapse: "Collapse"
+      }
     };
   }
   onExpandToggle(onCollapseCallback) {
@@ -77,7 +85,7 @@ class CollapsibleSlidingPanel extends React.Component {
         <div
           id="collapsible-sliding-panel-expander"
           title={
-            this.state.collapsiblePanelOpen ? i18n(COLLAPSE) : i18n(EXPAND)
+            this.state.collapsiblePanelOpen ? this.props.tooltipText.collapse : this.props.tooltipText.expand
           }
           className={expanderClassName}
           onClick={() => this.onExpandToggle(this.props.collapseCallback)}

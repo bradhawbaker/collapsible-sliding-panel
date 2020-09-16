@@ -64,6 +64,10 @@ export default class CollapsibleSlidingPanelTest extends Component {
           slidingPanelContent={menuContent}
           collapseCallback={this.onCollapse.bind(this)}
           collapsiblePanelOpen={true}
+          tooltipText={{
+            expand: "Expandir",
+            collapse: "Contraer"
+          }}
         >
           <div className="content-container">
             <p>this is the main area content</p>
